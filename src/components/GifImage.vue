@@ -23,5 +23,5 @@
   </script>
   
   <style scoped>
-  /* 你可以在這裡添加任何特定於這個組件的樣式 */
+  
   </style>
