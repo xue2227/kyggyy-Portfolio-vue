@@ -1,18 +1,19 @@
 <template>
-    <div class="fixed inset-0 bg-white z-50 flex justify-center items-center" ref="loading">
-        <div class="counter font-black fixed -bottom-8 right-12 [font-size:10rem]" ref="counter">0</div>
-    </div>
-    <div class="absolute inset-0 bg-black z-40" ref="black"></div>
-    <div class="absolute inset-0 bg-white z-10" ref="white2"></div>
-    <div class="absolute inset-0 z-10 flex justify-center items-center text-center overflow-hidden" ref="white3">
-        <div class="absolute top-0 left-0 bottom-0 bg-white z-20 w-1/2" ref="leftDoor"></div>
-        <div class="absolute top-0 right-0 bottom-0 bg-white z-20 w-1/2" ref="rightDoor"></div>
-        <div class="font-semibold overflow-hidden [font-size:3rem] flex z-30">
-            <div ref="welcomeText" class="leading-[0.7] pt-6">Welcome</div>
-            <div ref="restText" class="leading-[0.7] pt-6">&nbspto the wonder of 3D</div>
+    <div class="fixed inset-0 h-screen w-screen overflow-hidden z-50 " >
+        <div class="fixed inset-0 bg-white z-50 flex justify-center items-center" ref="loading">
+            <div class="counter font-black fixed -bottom-8 right-12 [font-size:10rem]" ref="counter">0</div>
+        </div>
+        <div class="absolute inset-0 bg-black z-40" ref="black"></div>
+        <div class="absolute inset-0 bg-white z-10" ref="white2"></div>
+        <div class="absolute inset-0 z-10 flex justify-center items-center text-center overflow-hidden" ref="white3">
+            <div class="absolute top-0 left-0 bottom-0 bg-white z-20 w-1/2" ref="leftDoor"></div>
+            <div class="absolute top-0 right-0 bottom-0 bg-white z-20 w-1/2" ref="rightDoor"></div>
+            <div class="font-semibold overflow-hidden [font-size:3rem] flex z-30">
+                <div ref="welcomeText" class="leading-[0.7] pt-6">Welcome</div>
+                <div ref="restText" class="leading-[0.7] pt-6">&nbspto the wonder of 3D</div>
+            </div>
         </div>
     </div>
-
 </template>
 
 <script setup>
@@ -50,7 +51,7 @@ onMounted(() => {
 
     const tl = gsap.timeline({
         onComplete: () => {
-            emit('animationComplete');
+            emit('animationComplete', tl);
         }
     });
 
@@ -114,6 +115,7 @@ onMounted(() => {
 
 
 });
+
 </script>
 
 <style scoped>
