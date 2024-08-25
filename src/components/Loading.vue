@@ -10,7 +10,7 @@
             <div class="absolute top-0 right-0 bottom-0 bg-white z-20 w-1/2" ref="rightDoor"></div>
             <div class="font-semibold overflow-hidden [font-size:3rem] flex z-30">
                 <div ref="welcomeText" class="leading-[0.7] pt-6">Welcome</div>
-                <div ref="restText" class="leading-[0.7] pt-6">&nbspto the wonder of 3D</div>
+                <div ref="restText" class="leading-[0.8] pt-6">&nbspto the wonder of 3D</div>
             </div>
         </div>
     </div>

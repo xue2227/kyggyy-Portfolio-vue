@@ -103,12 +103,12 @@ onMounted(() => {
 <template>
 
   <Loading v-if="showLoading" @animationComplete="handleAnimationComplete" />
-  <div ref="home" class="text-white p-8 pb-0 font-concielian bg-black h-[200vh] flex flex-col">
+  <div ref="home" class="text-white p-8 pb-0  bg-black h-[200vh] flex flex-col">
     <div class="h-screen flex flex-col overflow-visible">
       <div class="flex flex-col items-center justify-start flex-grow ">
         <div class="flex flex-row justify-between items-center w-full px-2">
           <Clock />
-          <div class="flex-grow text-center text-xl absolute left-1/2 transform -translate-x-1/2"> Tang-Zhen</div>
+          <div class="flex-grow text-center text-xl absolute left-1/2 transform -translate-x-1/2 font-black"> Tang-Zhen</div>
           <div class="orbitron-500 flex space-x-4 py-1 z-20 text-lg">
             <div ref="instagram" class="border border-white px-2 cursor-pointer">INSTAGRAM</div>
             <div ref="behance" class="border border-white px-2 cursor-pointer">BEHANCE</div>
@@ -124,7 +124,7 @@ onMounted(() => {
           </div>
 
         </div>
-        <div class="flex justify-center items-center w-10/12 mt-8 relative mx-auto text-xl orbitron-500">
+        <div class="flex justify-center items-center w-10/12 mt-8 relative mx-auto text-xl orbitron-400">
           <div class="flex flex-col items-end ml-24 w-[20rem]">
             <div class="h-[36px] w-[36px]"></div>
             <h1 class="text-right whitespace-nowrap ">
@@ -164,11 +164,12 @@ onMounted(() => {
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 @font-face {
-  font-family: 'Concielian';
-  src: url('../src/assets/fonts/Concielian.woff2') format('woff2');
+  font-family: 'Orbitron';
+  font-weight: 900;
+  src: url('https://fonts.gstatic.com/s/orbitron/v15/yMJMMIlzdpvBhQQL_RMoKQ.woff2') format('woff2');
 }
 
-.orbitron-500 {
+.orbitron-400 {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -176,7 +177,7 @@ onMounted(() => {
 }
 
 body {
-  font-family: 'Concielian', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   overflow: hidden;
   height: 100%;
   margin: 0;
