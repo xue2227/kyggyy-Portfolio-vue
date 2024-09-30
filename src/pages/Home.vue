@@ -13,6 +13,7 @@ const instagram = ref(null);
 const behance = ref(null);
 
 
+
 function handleAnimationComplete(tl) {
   showLoading.value = false;
   setTimeout(() => {
@@ -108,7 +109,7 @@ onMounted(() => {
       <div class="flex flex-col items-center justify-start flex-grow ">
         <div class="flex flex-row justify-between items-center w-full px-2">
           <Clock />
-          <div class="flex-grow text-center text-xl absolute left-1/2 transform -translate-x-1/2 font-black"> Tang-Zhen</div>
+          <div class="flex-grow text-center text-xl absolute left-1/2 transform -translate-x-1/2 font-black orbitron-900"> Tang-Zhen</div>
           <div class="orbitron-500 flex space-x-4 py-1 z-20 text-lg">
             <div ref="instagram" class="border border-white px-2 cursor-pointer">INSTAGRAM</div>
             <div ref="behance" class="border border-white px-2 cursor-pointer">BEHANCE</div>
@@ -146,11 +147,8 @@ onMounted(() => {
             </h1>
           </div>
         </div>
-        <div>
-          <Marquee text="Squeeze Imagination into Graphics." class="top-[48rem] h-[20vh] " />
-          <div
-            class="absolute bg-[#ffffff] z-20 w-full h-20 top-[54rem] left-0 mix-blend-difference pointer-events-none ">
-          </div>
+        <div class="flex flex-col items-start w-full">
+          <Marquee text="Squeeze Imagination into Graphics." class="h-[20vh] mt-4 " />
         </div>
       </div>
     </div>
@@ -163,10 +161,11 @@ onMounted(() => {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
-@font-face {
-  font-family: 'Orbitron';
+.orbitron-900 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 900;
-  src: url('https://fonts.gstatic.com/s/orbitron/v15/yMJMMIlzdpvBhQQL_RMoKQ.woff2') format('woff2');
+  font-style: normal;
 }
 
 .orbitron-400 {

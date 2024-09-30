@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed inset-0 h-screen w-screen overflow-hidden z-50 " >
+    <div class="fixed inset-0 h-screen w-screen overflow-hidden z-50 orbitron-900" >
         <div class="fixed inset-0 bg-white z-50 flex justify-center items-center" ref="loading">
             <div class="counter font-black fixed -bottom-8 right-12 [font-size:10rem]" ref="counter">0</div>
         </div>

@@ -77,6 +77,7 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
   @font-face {
     font-family: 'Concielian';
     src: url('../src/assets/fonts/Concielian.woff2') format('woff2');
